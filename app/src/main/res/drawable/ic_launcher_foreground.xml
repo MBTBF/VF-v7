@@ -1,0 +1,48 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    
+    <!-- Outer Scanner Ring -->
+    <path
+        android:pathData="M54,20 C35.2,20 20,35.2 20,54 C20,72.8 35.2,88 54,88 C72.8,88 88,72.8 88,54 C88,35.2 72.8,20 54,20 Z"
+        android:strokeWidth="2.5"
+        android:strokeColor="#60A5FA"
+        android:strokeAlpha="0.8"
+        android:fillColor="#00000000" />
+
+    <!-- Corner Target Crosshairs -->
+    <path
+        android:pathData="M24,54 L16,54 M92,54 L84,54 M54,24 L54,16 M54,92 L54,84"
+        android:strokeWidth="2.5"
+        android:strokeColor="#93C5FD"
+        android:fillColor="#00000000" />
+
+    <!-- Human Head Silhouette -->
+    <path
+        android:pathData="M54,34 A7,7 0 1,0 54,48 A7,7 0 1,0 54,34 Z"
+        android:fillColor="#FFFFFF" />
+
+    <!-- Human Shoulders/Torso Silhouette -->
+    <path
+        android:pathData="M40,64 C40,55 46,51 54,51 C62,51 68,55 68,64 Z"
+        android:fillColor="#FFFFFF" />
+
+    <!-- 3 Detection Dots: Green, Orange, Red -->
+    <!-- Green Dot -->
+    <path
+        android:pathData="M40,75 A3,3 0 1,0 40,81 A3,3 0 1,0 40,75 Z"
+        android:fillColor="#22C55E" />
+
+    <!-- Orange Dot -->
+    <path
+        android:pathData="M54,75 A3,3 0 1,0 54,81 A3,3 0 1,0 54,75 Z"
+        android:fillColor="#F97316" />
+
+    <!-- Red Dot -->
+    <path
+        android:pathData="M68,75 A3,3 0 1,0 68,81 A3,3 0 1,0 68,75 Z"
+        android:fillColor="#EF4444" />
+
+</vector>

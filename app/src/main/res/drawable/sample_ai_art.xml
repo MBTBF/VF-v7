@@ -1,0 +1,34 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="300dp"
+    android:height="200dp"
+    android:viewportWidth="300"
+    android:viewportHeight="200">
+    <!-- Futuristic neon AI background -->
+    <path
+        android:pathData="M0,0h300v200h-300z"
+        android:fillColor="#1E1B4B" />
+    <!-- Glowing cyber shapes -->
+    <path
+        android:pathData="M50,150 L150,40 L250,150 Z"
+        android:fillColor="#8B5CF6" />
+    <path
+        android:pathData="M90,170 L150,90 L210,170 Z"
+        android:fillColor="#EC4899" />
+    <!-- Classic DALL-E style rainbow color swatch watermark in bottom-right corner -->
+    <!-- Yellow, Cyan, Green, Red, Blue color bars -->
+    <path
+        android:pathData="M245,182 h7 v12 h-7 z"
+        android:fillColor="#FACC15" />
+    <path
+        android:pathData="M253,182 h7 v12 h-7 z"
+        android:fillColor="#38BDF8" />
+    <path
+        android:pathData="M261,182 h7 v12 h-7 z"
+        android:fillColor="#22C55E" />
+    <path
+        android:pathData="M269,182 h7 v12 h-7 z"
+        android:fillColor="#EF4444" />
+    <path
+        android:pathData="M277,182 h7 v12 h-7 z"
+        android:fillColor="#3B82F6" />
+</vector>

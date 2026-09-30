@@ -1,0 +1,6 @@
+{
+  "name": "Pastille Humain",
+  "description": "Prototype V7 avec détection automatique de défilement, masquage immédiat au scroll, analyse stabilisée 1s, pastille déplaçable avec ancrage latéral anti-gêne et tap informatif rouge.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
