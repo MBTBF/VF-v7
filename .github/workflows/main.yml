@@ -1,0 +1,35 @@
+name: Build Android APK
+
+on:
+  push:
+    branches: [ "main" ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Récupérer le code
+      uses: actions/checkout@v4
+
+    - name: Configurer Java
+      uses: actions/setup-java@v4
+      with:
+        distribution: 'temurin'
+        java-version: '17'
+
+    - name: Configurer Gradle
+      uses: gradle/actions/setup-gradle@v3
+
+    - name: Créer le fichier Keystore manquant
+      run: keytool -genkey -v -keystore debug.keystore -storepass android -alias androiddebugkey -keypass android -keyalg RSA -keysize 2048 -validity 10000 -dname "C=FR, O=Android, CN=Android Debug"
+
+    - name: Compiler l'APK
+      run: gradle assembleDebug
+
+    - name: Sauvegarder l'APK
+      uses: actions/upload-artifact@v4
+      with:
+        name: pastille-humain-apk
+        path: app/build/outputs/apk/debug/app-debug.apk
